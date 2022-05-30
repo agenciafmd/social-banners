@@ -62,7 +62,7 @@ export function parseRequest(req: IncomingMessage) {
         md: md === '1' || md === 'true',
         showWatermark: showWatermark === '1' || showWatermark === 'true',
         fontSize: fontSize || '96px',
-        pattern: pattern || 'circuitBoard',
+        pattern: pattern || 'none',
         packageManager: packageManager || '',
         packageName: packageName || '',
         description: description || '',

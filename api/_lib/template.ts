@@ -18,11 +18,16 @@ function getCss(theme: string, pattern: string, fontSize: string) {
         background = '#000000';
         opacity = 0.15;
     }
+
+    let heroPattern = 'none';
+    if (pattern !== '') {
+        heroPattern = hero[pattern](foreground, opacity);
+    }
     return `
     body {
         font-family: Inter;
         background-color: ${background};
-        background-image: ${hero[pattern](foreground, opacity)}
+        background-image: ${heroPattern};
     }
 
     code {
