@@ -1,12 +1,11 @@
-
 import marked from 'marked';
-import { sanitizeHtml } from './sanitizer';
-import { ParsedRequest, Style, Theme } from './types';
+import {sanitizeHtml} from './sanitizer';
+import {ParsedRequest, Style, Theme} from './types';
 import * as hero from 'hero-patterns';
 import fs from 'fs';
 
 const twemoji = require('twemoji');
-const twOptions = { folder: 'svg', ext: '.svg' };
+const twOptions = {folder: 'svg', ext: '.svg'};
 const emojify = (text: string) => twemoji.parse(text, twOptions);
 
 function getCss(theme: string, pattern: string, fontSize: string) {
@@ -75,7 +74,7 @@ function getCss(theme: string, pattern: string, fontSize: string) {
     }
 
     .text-laravel {
-        color: #ff2d20;
+        color: #000000;
     }
     `;
 }

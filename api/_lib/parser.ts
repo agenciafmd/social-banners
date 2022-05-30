@@ -1,11 +1,24 @@
-import { IncomingMessage } from 'http';
-import { parse } from 'url';
-import { ParsedRequest } from './types';
+import {IncomingMessage} from 'http';
+import {parse} from 'url';
+import {ParsedRequest} from './types';
 
 export function parseRequest(req: IncomingMessage) {
     console.log('HTTP ' + req.url);
-    const { pathname, query } = parse(req.url || '/', true);
-    const { fontSize, images, widths, heights, theme, md, showWatermark, pattern, packageManager, packageName, description, style } = (query || {});
+    const {pathname, query} = parse(req.url || '/', true);
+    const {
+        fontSize,
+        images,
+        widths,
+        heights,
+        theme,
+        md,
+        showWatermark,
+        pattern,
+        packageManager,
+        packageName,
+        description,
+        style
+    } = (query || {});
 
     if (Array.isArray(fontSize)) {
         throw new Error('Expected a single fontSize');
@@ -72,7 +85,7 @@ function getArray(stringOrArray: string[] | string | undefined): string[] {
 }
 
 function getDefaultImages(images: string[]): string[] {
-    const defaultImage = 'https://laravel.com/img/logomark.min.svg';
+    const defaultImage = 'http://arquivos.fmd.ag/logo/fmd.svg';
 
     if (!images || !images[0]) {
         return [defaultImage];

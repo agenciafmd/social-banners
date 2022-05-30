@@ -1,4 +1,4 @@
-import { ParsedRequest, Theme, FileType, Style } from '../api/_lib/types';
+import {FileType, ParsedRequest, Style, Theme} from '../api/_lib/types';
 
 const { H, R, copee } = (window as any);
 let timeout = -1;
@@ -242,18 +242,19 @@ const watermarkOptions: DropdownOption[] = [
 ];
 
 const imageOptions: DropdownOption[] = [
-    { text: 'Laravel Logo', value: 'https://laravel.com/img/logomark.min.svg' }, 
-    { text: 'Beyond Code Logo', value: 'https://beyondco.de/img/logo.svg' }, 
-    { text: 'PHP Logo', value: 'https://www.php.net/images/logos/new-php-logo.svg' }, 
-    { text: 'Alternative PHP Logo', value: 'https://www.php.net/images/logos/php-logo.svg' }, 
-    { text: 'academic-cap', value: 'academic-cap' },
-    { text: 'adjustments', value: 'adjustments' },
-    { text: 'annotation', value: 'annotation' },
-    { text: 'archive', value: 'archive' },
-    { text: 'arrow-circle-down', value: 'arrow-circle-down' },
-    { text: 'arrow-circle-left', value: 'arrow-circle-left' },
-    { text: 'arrow-circle-right', value: 'arrow-circle-right' },
-    { text: 'arrow-circle-up', value: 'arrow-circle-up' },
+    {text: 'Agência F&MD Logo', value: 'http://arquivos.fmd.ag/logo/fmd.svg'},
+    {text: 'Laravel Logo', value: 'https://laravel.com/img/logomark.min.svg'},
+    {text: 'Beyond Code Logo', value: 'https://beyondco.de/img/logo.svg'},
+    {text: 'PHP Logo', value: 'https://www.php.net/images/logos/new-php-logo.svg'},
+    {text: 'Alternative PHP Logo', value: 'https://www.php.net/images/logos/php-logo.svg'},
+    {text: 'academic-cap', value: 'academic-cap'},
+    {text: 'adjustments', value: 'adjustments'},
+    {text: 'annotation', value: 'annotation'},
+    {text: 'archive', value: 'archive'},
+    {text: 'arrow-circle-down', value: 'arrow-circle-down'},
+    {text: 'arrow-circle-left', value: 'arrow-circle-left'},
+    {text: 'arrow-circle-right', value: 'arrow-circle-right'},
+    {text: 'arrow-circle-up', value: 'arrow-circle-up'},
     { text: 'arrow-down', value: 'arrow-down' },
     { text: 'arrow-left', value: 'arrow-left' },
     { text: 'arrow-narrow-down', value: 'arrow-narrow-down' },
