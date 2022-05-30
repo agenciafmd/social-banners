@@ -26,7 +26,7 @@ function getCss(theme: string, pattern: string, fontSize: string) {
     }
 
     code {
-        color: #ff2d20;
+        color: #000000;
         font-size: 2vw;
         font-family: 'Space Mono';
         font-weight: bold;

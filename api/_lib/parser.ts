@@ -85,7 +85,7 @@ function getArray(stringOrArray: string[] | string | undefined): string[] {
 }
 
 function getDefaultImages(images: string[]): string[] {
-    const defaultImage = 'http://arquivos.fmd.ag/logo/fmd.svg';
+    const defaultImage = 'http://arquivos.fmd.ag/logo/icon.svg';
 
     if (!images || !images[0]) {
         return [defaultImage];

@@ -242,7 +242,9 @@ const watermarkOptions: DropdownOption[] = [
 ];
 
 const imageOptions: DropdownOption[] = [
+    {text: 'Agência F&MD Icon', value: 'http://arquivos.fmd.ag/logo/icon.svg'},
     {text: 'Agência F&MD Logo', value: 'http://arquivos.fmd.ag/logo/fmd.svg'},
+    {text: 'Agência F&MD Negative Logo', value: 'http://arquivos.fmd.ag/logo/fmd-negative.svg'},
     {text: 'Laravel Logo', value: 'https://laravel.com/img/logomark.min.svg'},
     {text: 'Beyond Code Logo', value: 'https://beyondco.de/img/logo.svg'},
     {text: 'PHP Logo', value: 'https://www.php.net/images/logos/new-php-logo.svg'},
