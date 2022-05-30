@@ -136,7 +136,7 @@ const fileTypeOptions: DropdownOption[] = [
 ];
 
 let heroPatternOptions: DropdownOption[] = [
-    {text: 'none', value: ''},
+    {text: 'none', value: 'none'},
     {text: 'anchorsAway', value: 'anchorsAway'},
     {text: 'architect', value: 'architect'},
     {text: 'autumn', value: 'autumn'},

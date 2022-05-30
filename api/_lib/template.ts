@@ -20,7 +20,7 @@ function getCss(theme: string, pattern: string, fontSize: string) {
     }
 
     let heroPattern = 'none';
-    if (pattern !== '') {
+    if (pattern !== 'none') {
         heroPattern = hero[pattern](foreground, opacity);
     }
     return `
